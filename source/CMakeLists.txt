@@ -6,7 +6,7 @@ cmake_minimum_required( VERSION 3.18 )
 #######################################
 # Project name                        #
 #######################################
-project( OpENer LANGUAGES C VERSION 2.3 )
+project( OpENer LANGUAGES C VERSION 1.1 )
 
 #######################################
 # Project version                     #
@@ -22,7 +22,7 @@ if( NOT DEFINED OpENer_Device_Config_Product_Code )
   set( OpENer_Device_Config_Product_Code 65001 CACHE STRING "Device Product Code" )
 endif()
 if( NOT DEFINED OpENer_Device_Config_Device_Name )
-  set( OpENer_Device_Config_Device_Name "OpENer PC" CACHE STRING "Device Name" )
+  set( OpENer_Device_Config_Device_Name "Gespant" CACHE STRING "Device Name" )
 endif()
 if(NOT DEFINED OpENer_Device_Major_Version)
   set(OpENer_Device_Major_Version ${PROJECT_VERSION_MAJOR} CACHE STRING "Major Version")

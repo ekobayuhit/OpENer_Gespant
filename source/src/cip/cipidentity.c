@@ -28,6 +28,7 @@
 #include "cipidentity.h"
 
 #include <string.h>
+#include <stdio.h>
 
 #include "opener_user_conf.h"
 #include "cipcommon.h"
@@ -258,7 +259,7 @@ EipStatus CipIdentityInit() {
                                    "identity", /* # class name (for debug)*/
                                    1, /* # class revision*/ //TODO: change revision to 2 - check
                                    &InitializeCipIdentity); /* # function pointer for initialization*/
-
+  printf("Revision : %d . %d \n", g_identity.revision.major_revision, g_identity.revision.minor_revision);
   if(class == 0) {
     return kEipStatusError;
   }
